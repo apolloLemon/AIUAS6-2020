@@ -179,33 +179,6 @@ joueur.cpp.s:
 	cd /home/rakl/Repository/connect4 && $(MAKE) -f joueurs/CMakeFiles/joueurs.dir/build.make joueurs/CMakeFiles/joueurs.dir/joueur.cpp.s
 .PHONY : joueur.cpp.s
 
-joueur_alphabeta_.o: joueur_alphabeta_.cpp.o
-
-.PHONY : joueur_alphabeta_.o
-
-# target to build an object file
-joueur_alphabeta_.cpp.o:
-	cd /home/rakl/Repository/connect4 && $(MAKE) -f joueurs/CMakeFiles/joueurs.dir/build.make joueurs/CMakeFiles/joueurs.dir/joueur_alphabeta_.cpp.o
-.PHONY : joueur_alphabeta_.cpp.o
-
-joueur_alphabeta_.i: joueur_alphabeta_.cpp.i
-
-.PHONY : joueur_alphabeta_.i
-
-# target to preprocess a source file
-joueur_alphabeta_.cpp.i:
-	cd /home/rakl/Repository/connect4 && $(MAKE) -f joueurs/CMakeFiles/joueurs.dir/build.make joueurs/CMakeFiles/joueurs.dir/joueur_alphabeta_.cpp.i
-.PHONY : joueur_alphabeta_.cpp.i
-
-joueur_alphabeta_.s: joueur_alphabeta_.cpp.s
-
-.PHONY : joueur_alphabeta_.s
-
-# target to generate assembly for a file
-joueur_alphabeta_.cpp.s:
-	cd /home/rakl/Repository/connect4 && $(MAKE) -f joueurs/CMakeFiles/joueurs.dir/build.make joueurs/CMakeFiles/joueurs.dir/joueur_alphabeta_.cpp.s
-.PHONY : joueur_alphabeta_.cpp.s
-
 joueur_brutal_.o: joueur_brutal_.cpp.o
 
 .PHONY : joueur_brutal_.o
@@ -275,9 +248,6 @@ help:
 	@echo "... joueur.o"
 	@echo "... joueur.i"
 	@echo "... joueur.s"
-	@echo "... joueur_alphabeta_.o"
-	@echo "... joueur_alphabeta_.i"
-	@echo "... joueur_alphabeta_.s"
 	@echo "... joueur_brutal_.o"
 	@echo "... joueur_brutal_.i"
 	@echo "... joueur_brutal_.s"

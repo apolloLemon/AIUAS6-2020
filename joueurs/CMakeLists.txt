@@ -15,7 +15,6 @@ set(SRCS
     joueur.cpp
     joueur_random.cpp
     joueur_brutal_.cpp
-    joueur_alphabeta_.cpp
     ab_nathan.cpp
     )
     
@@ -23,7 +22,6 @@ set(HEADERS
     joueur.h
     joueur_random.h
     joueur_brutal_.h
-    joueur_alphabeta_.h
     ab_nathan.h
     )
 
