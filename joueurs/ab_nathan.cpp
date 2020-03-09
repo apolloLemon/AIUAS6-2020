@@ -87,5 +87,5 @@ ab_return Joueur_AB_Nathan::alphabeta_with_move(Jeu jeu, bool E, int a, int b) {
 
 void Joueur_AB_Nathan::recherche_coup(Jeu jeu, int &coup)
 {
-	
+	coup = 0;
 }
