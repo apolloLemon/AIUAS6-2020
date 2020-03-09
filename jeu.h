@@ -37,6 +37,7 @@ class Jeu {
 
  public :
   Jeu(int graine);
+  int etat();
   void reset(); // Remet à la graine le jeu
   bool coup_licite(int); // Vérifie si le coup est licite
   void joue(int); // Joue le coup (sans vérifier qu'il est licite)

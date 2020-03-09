@@ -5,6 +5,8 @@ Jeu::Jeu(int graine) {
   reset();
 }
 
+int Jeu::etat() { return _etat; } 
+
 void Jeu::reset() {
   int i = 0;
   for (i = 0; i < MAX_HAUTEUR; i++) {
