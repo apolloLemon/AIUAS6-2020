@@ -2,9 +2,11 @@
 ## Universite Angers
 ### L3 S6 2020
 
-Baptiste	Brinon
-Nathan		Coustance
-Matthew 	Coyle
+
+
+Baptiste	Brinon,
+Nathan		Coustance,
+Matthew 	Coyle,
 Christopher	Loughran
 
 
