@@ -140,7 +140,9 @@ void Plateau::afficher( std::ostream &flux) const {
                 flux << " |";
             }
         }
+        std::cout << "PUISSANCE: " << puissance << std::endl;
         puissance = puissance >> 1;
+        std::cout << "PUISSANCE: " << puissance << std::endl;
         flux << std::endl;
     }
     flux << '|';
