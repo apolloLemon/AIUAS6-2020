@@ -1,4 +1,4 @@
-# Install script for directory: /home/melon/University/S6/AI/TP/TP2/DISTRIBUTION
+# Install script for directory: /home/rakl/Repository/connect4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/melon/University/S6/AI/TP/TP2/DISTRIBUTION/joueurs/cmake_install.cmake")
+  include("/home/rakl/Repository/connect4/joueurs/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/melon/University/S6/AI/TP/TP2/DISTRIBUTION/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rakl/Repository/connect4/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

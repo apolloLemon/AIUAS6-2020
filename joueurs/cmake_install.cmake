@@ -1,4 +1,4 @@
-# Install script for directory: /home/melon/University/S6/AI/TP/TP2/DISTRIBUTION/joueurs
+# Install script for directory: /home/rakl/Repository/connect4/joueurs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
