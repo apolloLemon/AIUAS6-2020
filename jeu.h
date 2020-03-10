@@ -25,13 +25,8 @@ std::ostream& operator<<( std::ostream &flux, Plateau const& plateau );
 class Jeu {
  private :
   //int _graine;
-  Plateau _plateau;
-  int _tab[MAX_LARGEUR];
   int _nombre;
-  int _puissance[MAX_LARGEUR];
   int _alignement;
-  int _dual_x[MAX_HAUTEUR];
-  int _dual_o[MAX_HAUTEUR];
   int _etat;
   int _nb_tours;
 
@@ -47,4 +42,12 @@ class Jeu {
   bool partie_nulle(); // Vérifie si la partie est nulle
   void print_coups();
   Plateau* plateau();
+
+  int getTours() { return _nb_tours; }
+
+  Plateau _plateau;
+  int _tab[MAX_LARGEUR]; // Coups possibles
+  int _puissance[MAX_LARGEUR];
+  int _dual_x[MAX_HAUTEUR];
+  int _dual_o[MAX_HAUTEUR];
 };
