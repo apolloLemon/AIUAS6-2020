@@ -28,7 +28,6 @@ class Jeu {
   int _nombre;
   int _alignement;
   int _etat;
-  int _nb_tours;
 
  public :
   Jeu(int graine);
@@ -43,10 +42,9 @@ class Jeu {
   void print_coups();
   Plateau* plateau();
 
-  int getTours() { return _nb_tours; }
-
   Plateau _plateau;
   int _tab[MAX_LARGEUR]; // Coups possibles
+  int _nb_tours;
   int _puissance[MAX_LARGEUR];
   int _dual_x[MAX_HAUTEUR];
   int _dual_o[MAX_HAUTEUR];
