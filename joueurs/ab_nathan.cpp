@@ -15,7 +15,7 @@ int eval(Jeu jeu, int ab)
 {
 	// Récupère le tour, ici va être le n° du tour après avoir joué
 	// (nb_tour++ dans Jeu::joue())
-	int tour = jeu.getTours();
+	int tour = jeu._nb_tours;
 	int val = 0;
 
 	// Si tout est rempli, alors égalité !
@@ -167,7 +167,7 @@ void Joueur_AB_Nathan::recherche_coup(Jeu jeu, int &coup)
 	
 	Jeu g = jeu;
 
-	int tour = jeu.getTours();
+	int tour = jeu._nb_tours;
 	int ab = tour%2;
 	int mult = 1;
 	int mm = 0;
