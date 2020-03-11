@@ -1,11 +1,7 @@
-libjouers.a
-CMakeChache.txt
+lib*.a
+CMakeCache.txt
 cmake_install.cmake
 Makefile
 CMakeFiles/
-
-joueurs/CMakesFiles/
-joueurs/cmake_install.cmake
-joueurs/Makefile
 
 Arene_light
