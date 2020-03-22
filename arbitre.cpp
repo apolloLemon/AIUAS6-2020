@@ -32,6 +32,9 @@ void Arbitre::initialisation()
   case player::S_MATTHEW:
     _joueur1 = std::make_shared<search_matthew> ("S_Matthew",true);
     break;
+  case player::PLAYER:
+    _joueur1 = std::make_shared<Joueur_Manuel> ("HUMAN",true);
+    break;
   default:
     break;
   }
@@ -48,6 +51,9 @@ void Arbitre::initialisation()
     break;
   case player::S_MATTHEW:
     _joueur2 = std::make_shared<search_matthew> ("S_Matthew",false);
+    break;
+  case player::PLAYER:
+    _joueur2 = std::make_shared<Joueur_Manuel> ("HUMAN",false);
     break;
   default:
     break;

@@ -25,7 +25,7 @@ int std::min (int a, int b) {return ((a<=b)? a:b);}
 typedef std::pair<int,int> ab_return;
 ab_return alphabeta_with_move(Jeu jeu, bool E, int a, int b, int depth, int ab) {
 	if(jeu.fini() || depth==0)
-		return std::make_pair(eval_nathan(jeu,ab),-1); //for me 1 is me 0 is other, for nathan 0 is player 1 and 1 is player 2
+		return std::make_pair(eval_nathan(jeu,ab),-1);
 	
 	//nathan code
 	int mult;
@@ -72,7 +72,7 @@ ab_return alphabeta_with_move(Jeu jeu, bool E, int a, int b, int depth, int ab) 
 
 void search_matthew::recherche_coup(Jeu jeu, int &coup)
 {
-	int depth = 4;
+	int depth = 7;
 	//int n = 0;
 
 	//nathan code 

@@ -14,6 +14,7 @@ add_compile_options(-Wall -Wpedantic)
 set(SRCS
     joueur.cpp
     joueur_random.cpp
+    joueur_manuel.cpp
     joueur_brutal_.cpp
     ab_nathan.cpp
     search_matthew.cpp
@@ -22,6 +23,7 @@ set(SRCS
 set(HEADERS
     joueur.h
     joueur_random.h
+    joueur_manuel.cpp
     joueur_brutal_.h
     ab_nathan.h
     search_matthew.h
