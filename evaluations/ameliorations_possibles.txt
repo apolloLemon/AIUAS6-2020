@@ -1,0 +1,5 @@
+detection des chaines ouvertes et des chaines fermées:
+_OOX = 49*2 car ouvert à gauche
+_OO_ = 49*3 car ouvert des deux côtés
+_OOOX = 499*2
+_OOO_ = 499*3
