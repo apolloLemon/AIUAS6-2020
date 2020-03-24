@@ -25,7 +25,7 @@ int eval_nathan(Jeu jeu, int ab)
 	        (col == 61))) // xoxxxx
         	)
         {
-        	if(ab==1) {val+=999;} else {val-=999;}
+        	if(ab==1) {val+=9999;} else {val-=9999;}
         }
         else if ((hauteur == 2 && col == 7) || // xxx
 	 		(hauteur == 3 && hauteur > 0 && col == 14) || // oxxx
@@ -50,7 +50,7 @@ int eval_nathan(Jeu jeu, int ab)
 	        col == 3))    // xxoooo
 	        )
         {
-        	if(ab==1) {val-=999;} else {val+=999;}
+        	if(ab==1) {val-=9999;} else {val+=9999;}
         }
         else if ((hauteur == 2  && col == 0) || // ooo
 	        (hauteur == 3  && col == 1) || // xooo
@@ -86,7 +86,7 @@ int eval_nathan(Jeu jeu, int ab)
 		    ((dual & 4) && (dual & 8) && (dual & 16) && (dual & 32)) || // __????_
 		    ((dual & 8) && (dual & 16) && (dual & 32) && (dual & 64)) // ___????
 		    )
-		{ if(tour%2 == ab) {val-=999;} else {val+=999;} }
+		{ if(tour%2 == ab) {val-=9999;} else {val+=9999;} }
 
 			else if (((dual & 1) && (dual & 2) && (dual & 4) && (dual ^ 8)) || // ???____
 		    ((dual & 2) && (dual & 4) && (dual & 8) && (dual ^ 1) && (dual ^ 16)) || // _???___
