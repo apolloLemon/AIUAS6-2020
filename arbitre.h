@@ -15,7 +15,7 @@
 #include "joueurs/search_matthew.h"
 #include "joueurs/joueur_manuel.h"
 
-#define TEMPS_POUR_UN_COUP 10000 // millisecondes
+#define TEMPS_POUR_UN_COUP 10 // millisecondes
 
 /**********************************************************************************
  *             classe lançant la partie et qui se sert des                        *

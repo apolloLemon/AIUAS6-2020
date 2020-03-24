@@ -4,7 +4,7 @@
 #define INF_INT 999999
 
 #define FLAG(X) std::cout << X << std::endl
-//#define FLAG(X) 
+//#define FLAG(X)
 
 search_matthew::search_matthew(std::string nom, bool joueur)
     :Joueur(nom,joueur)
@@ -26,7 +26,7 @@ typedef std::pair<int,int> ab_return;
 ab_return alphabeta_with_move(Jeu jeu, bool E, int a, int b, int depth, int ab) {
 	if(jeu.fini() || depth==0)
 		return std::make_pair(eval_nathan(jeu,ab),-1);
-	
+
 	//nathan code
 	int mult;
 	if (ab==0) {mult=1;} else {mult=-1;};
@@ -47,7 +47,7 @@ ab_return alphabeta_with_move(Jeu jeu, bool E, int a, int b, int depth, int ab) 
 				mov = i;
 			}
 			a = std::max(a,val);
-			if(a>=b) break; 
+			if(a>=b) break;
 		}
 		return std::make_pair(val,mov);
 	} else {
@@ -72,15 +72,15 @@ ab_return alphabeta_with_move(Jeu jeu, bool E, int a, int b, int depth, int ab) 
 
 void search_matthew::recherche_coup(Jeu jeu, int &coup)
 {
-	int depth = 4;
+	int depth = 5;
 	//int n = 0;
 
-	//nathan code 
+	//nathan code
 	int tour = jeu._nb_tours;
 	int ab = tour%2;
 	//
 
-	auto res= alphabeta_with_move(jeu, true,-INF_INT,INF_INT,depth,ab); 
+	auto res= alphabeta_with_move(jeu, true,-INF_INT,INF_INT,depth,ab);
 	coup = res.second;
 	FLAG("coup "<<coup<<" :> "<<res.first);
 	//std::cout << n << "noeuds pour AB\n";
