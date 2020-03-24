@@ -72,7 +72,7 @@ ab_return alphabeta_with_move(Jeu jeu, bool E, int a, int b, int depth, int ab) 
 
 void search_matthew::recherche_coup(Jeu jeu, int &coup)
 {
-	int depth = 7;
+	int depth = 4;
 	//int n = 0;
 
 	//nathan code 
