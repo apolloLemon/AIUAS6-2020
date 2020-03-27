@@ -4,7 +4,6 @@
 
 typedef std::pair<int, int> ab_return;
 #define INF_INT 999999
-#define DEPTH 3
 
 class Alphabeta_Matthew : public Joueur
 {
