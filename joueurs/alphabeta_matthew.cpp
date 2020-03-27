@@ -58,7 +58,7 @@ ab_return Alphabeta_Matthew::alphabeta(Jeu jeu, bool E, int a, int b, int depth,
 
 void Alphabeta_Matthew::recherche_coup(Jeu jeu, int &coup)
 {
-	int depth = 4;
+	int depth = 4; // Profondeur maximale si on veut rendre 100% des mutex
 
 	int tour = jeu._nb_tours;
 	int ab = tour%2;
