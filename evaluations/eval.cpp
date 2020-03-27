@@ -5,7 +5,6 @@
 int eval_nathan(Jeu jeu, int ab)
 {
 	// Récupère le tour, ici va être le n° du tour après avoir joué
-	// (nb_tour++ dans Jeu::joue())
 	int tour = jeu._nb_tours;
 	int val = 0;
 
